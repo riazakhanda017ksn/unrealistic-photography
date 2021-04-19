@@ -1,0 +1,16 @@
+.dashboard-banner{
+    background: url(../../../images/contact-bg.jpg)no-repeat fixed top center;
+    height: 130vh;
+    background-size:cover ;
+    position: relative;
+}
+
+.dashboard-banner::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.514);
+}

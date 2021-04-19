@@ -1,0 +1,82 @@
+.form-for-order-submit {
+    margin: 71px 0;
+}
+.form-for-order-submit {
+    background: #dfdfdf62;
+    padding: 46px 39px;
+    border-radius: 10px;
+    position: relative;
+    top: 46px;
+}
+.form-for-order-submit input {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #b7b7b77d;
+    margin: 0 0px;
+    color: #ffffffdb;
+}
+.form-for-order-submit {
+    background: #6f6e6eb0;
+    padding: 69px 39px;
+    border-radius: 10px;
+    position: relative;
+    top: 46px;
+    box-shadow: 0px 0px 10px black;
+}
+.form-for-order-submit {
+    text-align: left;
+}
+.form-for-order-submit button {
+    display: inline-block;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 23px;
+    background: linear-gradient(45deg, #ff0153, #b923bbcc);
+    color: #fafafa;
+    font-size: 14px;
+    margin: 13px 0;
+    transition: .3s;
+}
+.form-for-order-submit button:hover {
+    background: linear-gradient(45deg,  #b923bbcc,#ff0153);
+    letter-spacing: 1px ;
+    
+}
+.payment-section{position: relative;}
+
+.position-relative{position: relative;color: #fafafa!important;}
+.the-total-charge h6 {
+    color: #efefffc4;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    bottom: 9px;
+}
+input.InputElement.is-complete.Input {
+    color: #fafafa;
+    font-weight: 500;
+    position: relative;
+}
+p.color {
+    position: relative;
+    color: #e4dadabd;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+}
+.form-for-order-submit {
+    background: #1f1b1b9c;
+    padding: 69px 39px;
+    border-radius: 10px;
+    position: relative;
+    top: 46px;
+    box-shadow: 0px 0px 10px #afa5a561;
+}
+
+.color{color:#fafafa!important;
+position: relative;}

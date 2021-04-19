@@ -1,0 +1,67 @@
+import React, { useEffect, useState } from 'react';
+import Footer from '../../Share/Footer/Footer';
+import Navbar from '../../Share/Navbar/Navbar';
+import DeleteService from '../DeleteService/DeleteService';
+import './ServiceDelete.css'
+const serviceDelete = () => {
+    const [DeleteServiceData, setDeleteServiceData] = useState([])
+      useEffect(() => {
+        fetch('http://localhost:5055/addService')
+            .then(res => res.json())
+            .then(data => setDeleteServiceData(data))
+    }, [0])
+
+    return (
+        <div>
+            <div className="delete-service">
+                <Navbar></Navbar>
+                <div className="container py-5">
+                    <div className="row py-5">
+                        <div className="col-lg-12 py-5">
+                            <div className="service-table">
+                                <table class="table table-borderless text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> Service Name</th>
+                                            <th scope="col"> Email</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Delete Service</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {
+                                            DeleteServiceData.map(deleteServiceItem=><DeleteService servicesDeleteItem={deleteServiceItem}></DeleteService>)
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Footer></Footer>
+        </div>
+    );
+};
+
+export default serviceDelete;
+
+
+
+import React from 'react';
+
+const DeleteService = (props) => {
+    const{name,price}=props.name
+    return (
+        <tr>
+        <th >{name}</th>
+        <td>{price}</td>
+        <td>
+            <button className='btn btn-outlie-danger'> Delete</button>
+        </td>
+       
+      </tr>
+    );
+};
+
+export default DeleteService;
