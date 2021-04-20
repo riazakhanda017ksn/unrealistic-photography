@@ -10,7 +10,7 @@ const Sidebar = () => {
     const [loggedInUser,setLoggedInUSer]=useContext(UserContext)
     const[isAdmin,setIsAdmin]=useState(false)
     useEffect(()=>{
-        fetch('http://localhost:5055/isAdmin',{
+        fetch('https://glacial-tundra-14316.herokuapp.com/isAdmin',{
             method:"POST",
             headers:{'content-type' : 'application/json'},
             body:JSON.stringify({email:loggedInUser.email})

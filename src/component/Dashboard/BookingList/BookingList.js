@@ -7,7 +7,7 @@ import './BookingList.css'
 const BookingList = () => {
     const [listData, setListData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5055/pictures')
+        fetch('https://glacial-tundra-14316.herokuapp.com/pictures')
             .then(res => res.json())
             .then(data => setListData(data))
     }, [0])

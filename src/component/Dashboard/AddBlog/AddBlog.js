@@ -15,7 +15,7 @@ const AddBlog = () => {
     
 
   
-    fetch('http://localhost:5055/addBlog',{
+    fetch('https://glacial-tundra-14316.herokuapp.com/addBlog',{
      method:'POST',
      headers:{
       'content-type' : 'application/json'

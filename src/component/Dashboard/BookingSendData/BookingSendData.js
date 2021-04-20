@@ -17,19 +17,18 @@ const BookingSendData = ({ date }) => {
 
     const [data, setData] = useState([])
    useEffect(()=>{
-       fetch('http://localhost:5055/addService')
+       fetch('https://glacial-tundra-14316.herokuapp.com/addService')
        .then(res=>res.json())
        .then(data=>setData(data))
        
-   },[0])
+   })
 
    const findResult = data.find(data => data._id ===_id)
-    console.log('find data',findResult);
+    
 
     const name = findResult?.name;
     const price = findResult?.price;
-    console.log(name,price);
-    console.log('data gese', name, price);
+    
     
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     // console.log(loggedInUser);
@@ -60,11 +59,12 @@ const BookingSendData = ({ date }) => {
             paymentId,
             date:new Date(),
             created:new Date()
-            
-           
         }
-        // console.log("newInfo ", newInformation);
-         fetch('http://localhost:5055/addServices',{
+
+          console.log('newInformation',newInformation);
+
+
+         fetch('https://glacial-tundra-14316.herokuapp.com/addServices',{
              method:"POST",
              headers:{'content-type' : 'application/json'},
              body:JSON.stringify(newInformation)
@@ -72,7 +72,6 @@ const BookingSendData = ({ date }) => {
          .then(res=>res.json())
          .then(success=>{
              if(success){
-
                  alert('data created SuccessFully')
              }
          })

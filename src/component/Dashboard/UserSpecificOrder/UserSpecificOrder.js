@@ -9,7 +9,7 @@ const UserSpecificOrder = () => {
     const [UserOrders,setUserOrder]=useState([])
     const [loggedInUser,setLoggedInUser]=useContext(UserContext)
     useEffect(()=>{
-        fetch('http://localhost:5055/specificOrder?email='+loggedInUser.email)
+        fetch('https://glacial-tundra-14316.herokuapp.com/specificOrder?email='+loggedInUser.email)
         .then(res=>res.json())
         .then(data=>{
             setUserOrder(data)

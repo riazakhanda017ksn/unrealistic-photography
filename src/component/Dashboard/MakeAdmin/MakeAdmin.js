@@ -15,7 +15,7 @@ const MakeAdmin = () => {
         }
       
 
-        fetch('http://localhost:5055/makeAdmin', {
+        fetch('https://glacial-tundra-14316.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

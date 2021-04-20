@@ -8,7 +8,7 @@ const Service = () => {
           const[ServicesItem,setServicesItem]=useState([])
 
           useEffect(()=>{
-            fetch('http://localhost:5055/addService')
+            fetch('https://glacial-tundra-14316.herokuapp.com/addService')
             .then(res=>res.json())
             .then(data=>setServicesItem(data))
           },[0])

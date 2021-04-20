@@ -5,7 +5,7 @@ const DeleteService = (props) => {
     
     
     const deleteEvent =id=>{
-      fetch(`http://localhost:5055/deleteService/${id}`,{
+      fetch(`https://glacial-tundra-14316.herokuapp.com/deleteService/${id}`,{
           method:"DELETE"
       })
       .then(res=>res.json())

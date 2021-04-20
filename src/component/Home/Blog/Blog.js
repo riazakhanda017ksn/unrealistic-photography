@@ -12,7 +12,7 @@ const Blog = () => {
 
     const[images,setImages]=useState([])
      useEffect(()=>{
-        fetch('http://localhost:5055/AddBlogs')
+        fetch('https://glacial-tundra-14316.herokuapp.com/AddBlogs')
         .then(res=>res.json())
         .then(data=>setImages(data))
      },[0])

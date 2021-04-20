@@ -20,7 +20,7 @@ const Reviews = () => {
     
 
   
-    fetch('http://localhost:5055/addReview',{
+    fetch('https://glacial-tundra-14316.herokuapp.com/addReview',{
      method:'POST',
      headers:{
       'content-type' : 'application/json'

@@ -17,7 +17,7 @@ const AddService = () => {
 
 
 
-        fetch('http://localhost:5055/AddedNewService', {
+        fetch('https://glacial-tundra-14316.herokuapp.com/AddedNewService', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

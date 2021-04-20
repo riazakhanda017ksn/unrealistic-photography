@@ -9,7 +9,7 @@ const Testomonial = () => {
  
     const [reviews,setReviews]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5055/photosItems')
+        fetch('https://glacial-tundra-14316.herokuapp.com/photosItems')
         .then(res=>res.json())
         .then(data=>setReviews(data))
 

@@ -8,7 +8,7 @@ const ServiceDeletes = () => {
 
         const [DeleteServiceData, setDeleteServiceData] = useState([])
          useEffect(() => {
-            fetch('http://localhost:5055/addService')
+            fetch('https://glacial-tundra-14316.herokuapp.com/addService')
                 .then(res => res.json())
                 .then(data => setDeleteServiceData(data))
         }, [0])

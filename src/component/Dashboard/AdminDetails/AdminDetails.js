@@ -4,7 +4,7 @@ const AdminDetails = (props) => {
     const {name,email,_id}=props.AdminDetailsShow
 
     const deleteEvent =id=>{
-        fetch(`http://localhost:5055/deleteAdmin/${id}`,{
+        fetch(`https://glacial-tundra-14316.herokuapp.com/deleteAdmin/${id}`,{
             method:"DELETE"
         })
         .then(res=>res.json())

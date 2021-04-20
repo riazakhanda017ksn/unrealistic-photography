@@ -8,7 +8,7 @@ import './ManageOrder.css'
 const ManageOrder = () => {
    const [order,setOrder]=useState([])
   useEffect(()=>{
-    fetch('http://localhost:5055/pictures')
+    fetch('https://glacial-tundra-14316.herokuapp.com/pictures')
     .then(res=>res.json())
     .then(data=>setOrder(data))
   },[0])
