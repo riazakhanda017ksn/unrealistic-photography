@@ -35,7 +35,7 @@ const Sidebar = () => {
                 </div>}
                  
                  <li>  <span className='mr-3'> <FontAwesomeIcon icon={faComment} /></span>  <Link  to='/reviews'>Review</Link></li>
-                 <li>  <span className='mr-3'> <FontAwesomeIcon icon={faBookDead} /></span>  <Link to='/userOrder'> Booking </Link></li>
+                 <li>  <span className='mr-3'> <FontAwesomeIcon icon={faBookDead} /></span>  <Link to='/userOrder'>My Booking List</Link></li>
                  
 
              </ul>

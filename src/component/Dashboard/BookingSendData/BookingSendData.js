@@ -102,7 +102,8 @@ const BookingSendData = ({ date }) => {
             </form>
 
             <div>
-                <Link to='/userOrder'><ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment></Link>
+                
+              <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
             </div>
         </div>
             </div>
